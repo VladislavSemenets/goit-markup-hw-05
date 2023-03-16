@@ -535,8 +535,14 @@ img {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.links-item:hover .filter-description,
-.links-item:focus .filter-description {
+.links-list-wrap {
+	transition-property: transform;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.links-list-wrap:hover .filter-description,
+.links-list-wrap:focus .filter-description {
 	transform: translateY(0%);
 }
 
@@ -547,9 +553,9 @@ img {
 
 .container-list:hover,
 .container-list:focus {
-	border-bottom: 1px solid #F4F4FD;
-	border-left: 1px solid #F4F4FD;
-	border-right: 1px solid #F4F4FD;
+	border-bottom: 1px solid #f4f4fd;
+	border-left: 1px solid #f4f4fd;
+	border-right: 1px solid #f4f4fd;
 }
 .filter-description {
 	position: absolute;
@@ -622,19 +628,17 @@ img {
 	height: 24px;
 	margin-top: 32px;
 	margin-right: 32px;
-	display: block;
 	margin-left: auto;
 	border-radius: 50%;
 	background: #e7e9fc;
 	border: 1px solid rgba(0, 0, 0, 0.1);
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	border: 0em;
 }
 .modal-btn-svg {
 	fill: #2e2f42;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .is-hidden {
